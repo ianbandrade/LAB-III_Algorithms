@@ -1,4 +1,4 @@
-# Busca_em_textos
+# Busca em textos
 
 ## O que é
 
