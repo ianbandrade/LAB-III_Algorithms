@@ -79,6 +79,7 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Pat: " + PAT);
         System.out.println("Text: " + TEXT);
+
         System.out.println("\nPositions -> " + searchBF(TEXT, PAT) + ": Brute Force");
         System.out.println("Positions -> " + searchBMHS(TEXT, PAT) + ": Horspool");
     }
