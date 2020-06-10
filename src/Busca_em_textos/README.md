@@ -33,6 +33,6 @@ Trabalha com o sufixo da palavra. É feita apenas uma comparação, se esta comp
 O alinhamento é feito da esquerda para a direita.
 
 ### Algoritmos
-##### Denominados como:
+
 1. searchBF
 2. searchBMHS
