@@ -11,17 +11,17 @@ Padrão é diferente de String. String é uma série de caracteres. Mas um padr�
 ### Algoritmos
 1. searchBF
 2. searchBMHS
-##### Força bruta clássica
+#### Força bruta clássica
 
 Percorrer o texto e ir comparando a primeira caractere com o padrão indicado. Caso a primeira caractere for idêntica, segue a comparação entre a caractere do texto e o padrão, até achar o padrão. Se alguma caractere do texto não coincidir com alguma caractere do padrão, irá para a próxima palavra, no caso de texto, por exemplo.
 
-##### Boyer Moore
+#### Boyer Moore
 
 Boyer e Moore (1977) propuseram uma nova abordagem para o problema: por que não começar de no sentido da esquerda para a direita? 
 
 Faz a comparação entre o primeiro caractere do elemento do texto com o último caractere do padrão. Dessa forma, se a comparação for inválida, o padrão seria deslocado para a próxima caractere do texto, até que, para ser encontrado, o padrão tem de estar emparelhado com a palavra do texto e ser idêntica a ela. 
 
-##### Horspool
+#### Horspool
 
 Tem como base o algoritmo de Boyer Moore.
 
