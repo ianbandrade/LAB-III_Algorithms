@@ -1,5 +1,5 @@
 
-package Busca_em_textos;
+package Forca_bruta.Busca_em_textos;
 
 import java.util.ArrayList;
 
