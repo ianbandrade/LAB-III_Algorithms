@@ -1,6 +1,6 @@
 # Busca em textos
 
-## O que é
+### Problema
 
 Busca por alguma palavra ou elemento dentro de uma sequência de caracteres. A ideia central é encontrar um padrão entre caracteres.
 
@@ -11,7 +11,6 @@ Padrão é diferente de String. String é uma série de caracteres. Mas um padr�
 ### Algoritmos
 1. searchBF
 2. searchBMHS
-#### Problema
 ##### Força bruta clássica
 
 Percorrer o texto e ir comparando a primeira caractere com o padrão indicado. Caso a primeira caractere for idêntica, segue a comparação entre a caractere do texto e o padrão, até achar o padrão. Se alguma caractere do texto não coincidir com alguma caractere do padrão, irá para a próxima palavra, no caso de texto, por exemplo.
