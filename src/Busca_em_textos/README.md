@@ -4,7 +4,7 @@
 
 Busca por alguma palavra ou elemento dentro de uma sequência de caracteres. A ideia central é encontrar um padrão entre caracteres.
 
-### Padrão
+#### Padrão
 
 Padrão é diferente de String. String é uma série de caracteres. Mas um padrão pode ser uma String ou uma caractere. 
 
