@@ -1,8 +1,12 @@
+
 package Busca_em_textos;
 
 import java.util.ArrayList;
 
 public class App {
+    /**
+     * @author Ian Bittencourt Andrade
+     */
 
     public final static String PAT = "but";
     public final static String TEXT = "We may encounter many defeats but we must not be defeated.";
