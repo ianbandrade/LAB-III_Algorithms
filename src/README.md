@@ -14,7 +14,9 @@ Técnica que subdivide o problema em partes, logo depois reúne todas as partes 
 
 #### Exemplos
 
-[Multiplicação de matrizes](https://github.com/ianbandrade/LAB-III_Algorithms/tree/master/src/Divisao_e_conquista/Soma_de_subconjuntos)
+[Soma de subconjuntos](https://github.com/ianbandrade/LAB-III_Algorithms/tree/master/src/Divisao_e_conquista/Soma_de_subconjuntos)
+
+[Multiplicação de matrizes](https://github.com/ianbandrade/LAB-III_Algorithms/tree/master/src/Divisao_e_conquista/Multiplicacao_de_matrizes)
 
 [Par de pontos mais próximos](https://github.com/ianbandrade/LAB-III_Algorithms/tree/master/src/Divisao_e_conquista/Par_de_pontos_mais_proximos)
 
