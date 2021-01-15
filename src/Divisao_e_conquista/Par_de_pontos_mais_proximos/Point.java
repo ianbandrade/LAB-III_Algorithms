@@ -27,7 +27,8 @@ public class Point {
 
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < ++i; j++) {
-        if ( dist(points[ i ], points[ j ]) < min_val ) min_val = dist(points[ i ], points[ j ]);
+        if (dist(points[i], points[j]) < min_val)
+          min_val = dist(points[i], points[j]);
       }
     }
 
@@ -37,6 +38,5 @@ public class Point {
   private float min(float x, float y) {
     return Math.min(x, y);
   }
-
 
 }

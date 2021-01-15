@@ -16,12 +16,12 @@ public class Matrix {
    * @brief Creates a matrix.
    */
   public Matrix(int size) throws IllegalArgumentException {
-    if ( size < 1 ) {
+    if (size < 1) {
       throw new IllegalArgumentException("invalid matrix size");
     }
 
     this.size = size;
-    this.elements = new int[ size ][ size ];
+    this.elements = new int[size][size];
   }
 
   /**
@@ -37,7 +37,7 @@ public class Matrix {
 
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < n; j++) {
-        matrixC.elements[ i ][ j ] = matrixA.elements[ i ][ j ] + matrixB.elements[ i ][ j ];
+        matrixC.elements[i][j] = matrixA.elements[i][j] + matrixB.elements[i][j];
       }
     }
 
@@ -57,7 +57,7 @@ public class Matrix {
 
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < n; j++) {
-        matrixC.elements[ i ][ j ] = matrixA.elements[ i ][ j ] - matrixB.elements[ i ][ j ];
+        matrixC.elements[i][j] = matrixA.elements[i][j] - matrixB.elements[i][j];
       }
     }
 
@@ -78,7 +78,7 @@ public class Matrix {
     for (int i = 0; i < n; i++) {
       for (int k = 0; k < n; k++) {
         for (int j = 0; j < n; j++) {
-          matrixC.elements[ i ][ j ] += matrixA.elements[ i ][ k ] * matrixB.elements[ k ][ j ];
+          matrixC.elements[i][j] += matrixA.elements[i][k] * matrixB.elements[k][j];
         }
       }
     }
@@ -94,7 +94,7 @@ public class Matrix {
   public static Matrix strassen(Matrix matrixA, Matrix matrixB) {
     int size = matrixA.size;
 
-    if ( size <= LEAF_SIZE ) {
+    if (size <= LEAF_SIZE) {
       return naive(matrixA, matrixB);
     } else {
 
@@ -170,10 +170,10 @@ public class Matrix {
       Matrix matrixC = new Matrix(size);
       for (int i = 0; i < newSize; i++) {
         for (int j = 0; j < newSize; j++) {
-          matrixC.elements[ i ][ j ] = c11.elements[ i ][ j ];
-          matrixC.elements[ i ][ j + newSize ] = c12.elements[ i ][ j ];
-          matrixC.elements[ i + newSize ][ j ] = c21.elements[ i ][ j ];
-          matrixC.elements[ i + newSize ][ j + newSize ] = c22.elements[ i ][ j ];
+          matrixC.elements[i][j] = c11.elements[i][j];
+          matrixC.elements[i][j + newSize] = c12.elements[i][j];
+          matrixC.elements[i + newSize][j] = c21.elements[i][j];
+          matrixC.elements[i + newSize][j + newSize] = c22.elements[i][j];
         }
       }
 
@@ -192,11 +192,12 @@ public class Matrix {
    * @param j       count operand.
    * @brief Separate the elements of the matrix.
    */
-  private static void matrixElementSplitter(Matrix matrix, int newSize, Matrix m11, Matrix m12, Matrix m21, Matrix m22, int i, int j) {
-    m11.elements[ i ][ j ] = matrix.elements[ i ][ j ];                     // top left
-    m12.elements[ i ][ j ] = matrix.elements[ i ][ j + newSize ];           // top right
-    m21.elements[ i ][ j ] = matrix.elements[ i + newSize ][ j ];           // bottom left
-    m22.elements[ i ][ j ] = matrix.elements[ i + newSize ][ j + newSize ]; // bottom right
+  private static void matrixElementSplitter(Matrix matrix, int newSize, Matrix m11, Matrix m12, Matrix m21, Matrix m22,
+      int i, int j) {
+    m11.elements[i][j] = matrix.elements[i][j]; // top left
+    m12.elements[i][j] = matrix.elements[i][j + newSize]; // top right
+    m21.elements[i][j] = matrix.elements[i + newSize][j]; // bottom left
+    m22.elements[i][j] = matrix.elements[i + newSize][j + newSize]; // bottom right
   }
 
 }
